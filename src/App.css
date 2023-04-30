@@ -1,7 +1,7 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  /* max-width: 1280px; */
+  margin: 0;
+  /* padding: 2rem; */
   text-align: center;
 }
 
@@ -39,4 +39,10 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.technologies{
+  background: url("/Users/ou/Desktop/Mortgage_Calculator/src/assets/Rori_yin_yang_front_foghorns_11da77a2-4896-4666-9f32-c8305d7636c8.png") center center;
+  width: 100vw;
+  height: 50vh;
 }
