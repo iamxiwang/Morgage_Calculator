@@ -1,5 +1,5 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
 import './App.css'
 import Mortgage from './components/Mortgage'
 function App() {
@@ -8,13 +8,14 @@ function App() {
   return (
     <>
       <div className='technologies'>
-        <a href="https://vitejs.dev" target="_blank">
+        {/* <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      <h1>Vite + React</h1>
+        </a> */}
+      
+      <Mortgage  />
       </div>
       {/* <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
@@ -27,7 +28,7 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p> */}
-     <Mortgage  />
+    
     </>
   )
 }

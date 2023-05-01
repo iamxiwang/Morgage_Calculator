@@ -11,7 +11,7 @@ const Mortgage: React.FC = () => {
     setInterestRate(Number(event.target.value));
   };
 
-  const handleLoanTermChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+  const handleLoanTermChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setLoanTerm(Number(event.target.value));
   };
 
@@ -27,6 +27,8 @@ const Mortgage: React.FC = () => {
 
   return (
     <div className={styles.mortgage}>
+      <div className={styles.inner}>
+      <div className={styles.project_name}>Mortgage Calculator</div>
       <div className={styles.input}>
         <label htmlFor="loanAmount">Loan Amount:</label>
         <input
@@ -65,17 +67,34 @@ const Mortgage: React.FC = () => {
       </div>
       <div className={styles.input}>
         <label htmlFor="loanTerm">Loan Term:</label>
-        <select id="loanTerm" name="loanTerm" value={loanTerm} onChange={handleLoanTermChange}>
+        {/* <select id="loanTerm" name="loanTerm" value={loanTerm} onChange={handleLoanTermChange}>
           <option value="10">10 years</option>
           <option value="15">15 years</option>
           <option value="20">20 years</option>
           <option value="30">30 years</option>
-        </select>
+        </select> */}
+        <input 
+            type="number"
+            value={loanTerm}
+            min="1"
+            max="30"
+            onChange={handleLoanTermChange}
+        />
         <span>years</span>
+        <div>
+          <input className="style.range"
+          type="range" 
+          min="1"
+          max="30"
+          value={loanTerm}
+          onChange={handleLoanTermChange}
+          />
+        </div>
       </div>
       <div className={styles.output}>
         <h3>Monthly Payment:</h3>
         <p>${monthlyPayment.toFixed(2)}</p>
+      </div>
       </div>
     </div>
   );

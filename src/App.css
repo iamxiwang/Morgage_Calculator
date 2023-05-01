@@ -27,6 +27,7 @@
   }
 }
 
+
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
@@ -42,7 +43,26 @@
 }
 
 .technologies{
-  background: url("/Users/ou/Desktop/Mortgage_Calculator/src/assets/Rori_yin_yang_front_foghorns_11da77a2-4896-4666-9f32-c8305d7636c8.png") center center;
+  position: absolute;
+  background-image: url("../src/assets/Vivian_Xi_technologies_math_smart_magic_simple_and_clean_4K_sol_c7bbdf74-fab3-4995-8b21-d7a90b2682c1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100vw;
-  height: 50vh;
+  height: 100vh;
+  
+}
+@media (max-width: 768px) {
+  .technologies {
+    height: 100vh;
+  }
+  .logo {
+    height: 2em;
+  }
+  .project_name{
+    font-size: 30px;
+    width: 300px;
+    margin: 10px auto;
+    border-radius: 10px;
+    border-color: transparent
+  }
 }
