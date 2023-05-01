@@ -93,7 +93,7 @@ const Mortgage: React.FC = () => {
       </div>
       <div className={styles.output}>
         <h3>Monthly Payment:</h3>
-        <p>${monthlyPayment.toFixed(2)}</p>
+        <p className={styles.p}>${monthlyPayment.toFixed(2)}</p>
       </div>
       </div>
     </div>
